@@ -7,14 +7,6 @@
                 yazii += yazi(i)
             Else
                 If Not yazii = "" Then
-                    For d As Integer = 0 To yazii.Length - 1 Step +0
-                        If yazii(d) = Convert.ToChar(&HA) Then
-                            Dim hoh As Char() = yazii.ToCharArray
-                            hoh(d) = ""
-                            yazii = hoh.ToString()
-                        End If
-                        d = d + 1
-                    Next
                     tobereturned = appendstringarray(tobereturned, yazii)
                     yazii = ""
                     i = i + 1
